@@ -53,7 +53,6 @@ int inserirVetor(int n, struct vetorMagico *p){
 	 p->v[p->posicao++] = n;
 	 p->tamanho = p->tamanho * 2;
 	 return 1;
-	
 	}	
 }
 
@@ -82,10 +81,7 @@ void menu(){
 	printf("3 - MOSTRAR VETOR\n");
 }
 
-
 int main(){
-	
-	char t;
 	int num, i, op = 1;
 	struct vetorMagico *vetor;
 	vetor = criarVetor(5);
