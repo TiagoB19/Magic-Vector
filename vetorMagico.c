@@ -85,12 +85,14 @@ void menu(){
 
 int main(){
 	
+	char t;
 	int num, i, op = 1;
 	struct vetorMagico *vetor;
 	vetor = criarVetor(5);
 	if(vetor) printf("VETOR CRIADO COM SUCESSO!\n\n");
 	
 	while(op){
+		system("cls");
 		menu();
 		scanf("%d", &op);
 		if(op == 1){
@@ -108,6 +110,8 @@ int main(){
 		if(op == 3){
 			system("cls");
 			mostrarVetor(vetor);
+			fflush(stdin);
+			getchar();
 		}		
 	}
 	return 0;
